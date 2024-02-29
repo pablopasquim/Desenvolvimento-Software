@@ -7,25 +7,25 @@ public class atv1 {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Informe a Matricula: ");
-        int matricula = scanner.nextInt();
+        String matricula = scanner.nextLine();
         
         System.out.println("Informe seu Nome: ");
         String nome = scanner.nextLine();
 
         System.out.println("Informe a nota 1: ");
-        Float nota1 = scanner.nextFloat();
+        Double nota1 = scanner.nextDouble();
 
         System.out.println("Informe a nota 2: ");
-        Float nota2 = scanner.nextFloat();
+        Double nota2 = scanner.nextDouble();
         
-        Double notaFinal = (nota1 + nota2) / 2;
+        Double notaFinal = (nota1 + nota2) /2;
 
         System.out.println();
 
         if (notaFinal >= 6) {
             System.out.println("Aprovado!");
         } else {
-            System.out.println("Reprovado!") ;
+            System.out.println("Reprovado!");
         }
     }
 }
