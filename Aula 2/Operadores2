@@ -1,0 +1,21 @@
+class OlaMundo{
+	
+	public static void main(String[] args){
+	System.out.println("Bora codar");
+	}
+	
+}
+
+public class Var {
+    
+    public static void main(String[] args) {
+        
+        final double FULLNAME = 3.14;
+        double valor = 0;
+        float valorFloat = 1.1f;
+        int valorInt = 1;
+        boolean valorBo = true;
+        char letra = 'a';
+        long valorLong = 12323;
+	}
+}
