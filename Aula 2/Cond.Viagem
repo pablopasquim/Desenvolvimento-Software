@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class destino {
+     public static void main(String[] args) {
+
+        System.out.println("================");
+        System.out.print("Informe seu Destino: ");
+        
+        Scanner scanner = new Scanner(System.in);
+        String valor = scanner.nextLine();
+
+        switch (valor) {
+            case "Brasil":
+                System.out.println("Bem vindo ao Brasil");
+                break;
+            case "USA":
+                System.out.println("Bem vindo ao USA");
+                break;
+            default:
+                System.out.println("Bem vindo ao " + valor );
+                break;
+        }
+        scanner.close();
+}
+}
