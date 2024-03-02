@@ -1,0 +1,59 @@
+import java.util.Scanner;
+
+public class App {
+
+    public static void main(String[] args) {
+        
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.println("---------------------------------");
+        System.out.print("Código ");
+        System.out.println(" Descrição ");
+        System.out.print("  1 ");
+        System.out.println("    Alimento Não-perecível ");
+        System.out.print("  2 ");
+        System.out.println("    Alimento Perecível ");
+        System.out.print("  3 ");
+        System.out.println("    Vestuário ");
+        System.out.print("  4 ");
+        System.out.println("    Limpeza ");
+        System.out.println("---------------------------------");
+
+        System.out.println("Nome do alimento: ");
+        String produto = scanner.nextLine();
+
+        System.out.println("Digite o número de classificação do produto: ");
+        String numero = scanner.nextLine();
+
+        
+
+
+        switch (numero) {
+            case "1":
+                System.out.println("Alimento Não-perecível");
+                break;
+            case "2":
+                System.out.println("Alimento Perecível");
+                break;
+            case "3":
+                System.out.println("Vestuário");
+                break;
+            case "4":
+                System.out.println("Limpeza");
+                break;
+        
+            default:
+                System.out.println("Tente outro número entre 1 e 4!");
+                break;
+        }
+        
+        System.out.println("---------------------------------");
+        System.out.println("Nome do alimento: " + produto);
+        System.out.println("Número de classificação: " + numero);
+        System.out.println("---------------------------------");
+        
+
+            scanner.close();
+    }
+
+}
