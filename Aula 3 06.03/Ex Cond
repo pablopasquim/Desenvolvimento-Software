@@ -1,0 +1,35 @@
+import java.util.Scanner;
+import java.lang.invoke.CallSite;
+
+
+/**
+ * aula3
+ */
+public class aula3 {
+    /**
+ *  
+ */
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int change = 1;
+
+        while (change != 0) {
+            System.out.println("Escolha uma opção: ");
+            System.out.println("1 - ToLowerCase");
+            System.out.println("2 - ToUpperCase");
+            System.out.println("0 - Sair");
+            change = scanner.nextInt();
+        }
+        switch (change) {
+            case 1:
+                System.out.println("ToLowerCase");
+                break;
+            case 2:
+                System.out.println("ToUpperCase");
+                break;
+            default:
+                System.out.println("Sair");
+                break;
+        }
+    }
+}
