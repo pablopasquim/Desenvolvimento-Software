@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+
+
+/**
+ * aula3
+ */
+public class app3 {
+    /**
+ *  
+ */
+    public static void main(String[] args) {
+        
+      String[] cidade = new String[10];
+      var temperaturas = new double[10];
+
+    for(int i = 0; i < cidade.length; i++) {
+        cidade[i] = "Elemento" + 1;
+    }
+    for(int i = 0; i < temperaturas.length; i++){
+        temperaturas[i] = Math.random() * 0.5;
+    }
+    for(int i = 0; i < 10; i++){
+        System.out.println(cidade[i] + ": " + temperaturas[i]);
+
+      }
+      
+                
+            
+        
+        
+    }
+}
