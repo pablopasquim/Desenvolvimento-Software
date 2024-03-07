@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+/**
+ * ex6
+ */
+public class ex6 {
+        
+
+    public static void main(String[] args) {
+    ler();
+    
+    }
+
+    public static void ler(){
+        
+        Scanner scan = new Scanner(System.in);
+
+        System.out.println("Digite um número: ");
+        int num1 = scan.nextInt();
+        System.out.println(num1);
+
+        multi(num1);
+    }
+
+    public static void multi(int num1){
+        var resultado = num1 * 10;
+        
+        
+    }
+
+}
