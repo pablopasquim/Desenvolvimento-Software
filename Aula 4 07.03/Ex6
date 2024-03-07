@@ -24,7 +24,7 @@ public class ex6 {
 
     public static void multi(int num1){
         var resultado = num1 * 10;
-        
+        System.out.println(resultado);
         
     }
 
