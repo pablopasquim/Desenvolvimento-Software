@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class atv5 {
+    public static void main(String[] args) {
+     ler();
+     
+    }
+
+        public static void ler(){
+
+            Scanner scan = new Scanner(System.in);
+            
+            System.out.println("Digite um nome: ");
+            String nome = scan.nextLine();
+
+            System.out.println("Olá "+ nome);
+
+            imprimirNome(nome);
+
+        }
+
+        public static void imprimirNome(String nome){
+            System.out.println(nome);
+        }
+        
+    }
