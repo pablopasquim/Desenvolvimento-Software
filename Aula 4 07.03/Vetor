@@ -1,0 +1,32 @@
+import java.util.Random;
+
+public class host {
+    public static void main(String[] args) {
+        Random random = new Random();
+        int[] vetor = new int[12];
+
+        for (int i = 0; i < 12; i++) {
+            vetor[i] = random.nextInt(201) - 100; 
+        }
+
+        System.out.println("Vetor Original:");
+        for (int num : vetor) {
+            System.out.print(num + " ");
+        }
+        System.out.println();
+
+        int resultadoMultiplicacao = 1;
+
+        for (int num : vetor) {
+            if (num > 0) {
+                resultadoMultiplicacao *= num;
+            }
+        }
+
+        if (resultadoMultiplicacao != 1) {
+            System.out.println("Resultado da multiplicação dos positivos: " + resultadoMultiplicacao);
+        } else {
+            System.out.println("Não há números positivos para multiplicar.");
+        }
+    }
+}
