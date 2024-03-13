@@ -1,0 +1,30 @@
+package br.edu.up;
+
+import java.util.Scanner;
+
+import br.edu.up.modelos.Aluno;
+
+public class Principal {
+    
+    public static void main(String[] args) {
+    
+        Aluno[] alunos = new Aluno[5];
+
+        for(int i = 0 ; i < alunos.length; i++) {
+            Aluno aluno = new Aluno();
+            aluno.matricula = Double.valueOf(Math.random() * 100).longValue();
+            
+            aluno.nome = "Aluno " + i;
+
+            alunos[i] = aluno;
+    }
+
+    for (Aluno aluno : alunos) {
+        aluno.imprimirDados();
+    }
+
+
+
+    }
+
+}
