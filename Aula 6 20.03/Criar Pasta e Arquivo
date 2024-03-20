@@ -1,0 +1,21 @@
+package br.edu.up.arquivos;
+
+import java.io.File;
+import java.io.IOException;
+
+public class Principal {
+    public static void main(String[] args) throws IOException {
+        File directory = new File("C:\\Users\\autologon\\IdeaProjects\\Aula 6\\Teste");
+        File arquivo = new File(directory, "teste txt");
+
+        boolean result = arquivo.createNewFile();
+
+        if(result){
+            System.out.println("Diretorio Criado");
+        } else {
+            System.out.println("ERRO!");
+        }
+
+        System.out.println(directory.getAbsoluteFile());
+    }
+}
