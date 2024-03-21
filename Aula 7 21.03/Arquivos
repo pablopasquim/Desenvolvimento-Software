@@ -1,0 +1,24 @@
+package br.edu.up.arquivos;
+
+import java.io.*;
+import java.util.Date;
+
+public class Principal {
+    public static void main(String[] args) throws IOException {
+
+        String path = "C:\\Users\\autologon\\IdeaProjects\\aula6";
+
+        File arquivo = new File("dados.txt");
+        FileReader reader = new FileReader(arquivo);
+        BufferedReader buffered = new BufferedReader(reader);
+
+        String linha = "";
+        while ( (linha = buffered.readLine()) != null) {
+            String[] dados = linha.split(";");
+            long matricula = Long.parseLong(dados[0]);
+            Date dataAniversario = new Date(dados[2]);
+            System.out.println(dados[0]);
+            System.out.println(dados[2].trim());
+        }
+    }
+}
